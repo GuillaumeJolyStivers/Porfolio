@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Palette de couleurs */
+
+:root {
+    --dark: #888888;
+    --clair: #F0F0F0;
+    --couleur: #ecb7bc;
+}
+
+.gauche {
+    float: left;
+}
+
+.droite {
+    float: right;
+}
+
+.gauche,
+.droite {
+    width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+    .droite {
+        float: left;
+    }
+
+    .gauche,
+    .droite {
+        width: 100%;
+    }
+}
+
+/* Articles */
+
+#veille h1 {
+    text-align: center;
+}
+
+.wrap {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 31%;
+    max-width: 31%;
+    overflow: hidden;
+    border-radius: 0.25em;
+    background: #fff;
+    margin: 25px 1%;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 68em) {
+    .card {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 48em) {
+    .card {
+        min-width: 98%;
+    }
+}
+
+.card .head {
+    min-height: 250px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card .head:hover {
+    background-position: -79% 21.5%;
+}
+
+.card .head h3 {
+    margin: 0;
+    padding: 1em 1.5em;
+    align-self: flex-end;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    text-shadow: 0px 1px 0px #000;
+}
+
+.card .head h3 i.fa {
+    font-size: 120%;
+    position: relative;
+    top: 2px;
+}
+
+.card .head h3 span.time {
+    float: right;
+    font-weight: 200;
+}
+
+.card article {
+    padding: 0.5em 1.5em;
+}
+
+.card article h2:nth-of-type(1) {
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 205%;
+    line-height: 1.2em;
+    margin-bottom: 0.45em;
+}
+
+.card article p {
+    font-family: 'Droid Serif', serif;
+    line-height: 1.55em;
+    text-align: justify;
+}
+
+.card article p:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.card .foot {
+    padding-top: 1em;
+}
+
+.card .foot .profile-pic {
+    max-width: 52px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 1em 0 0;
+    display: inline-block;
+}
+
+.card .foot .author {
+    font-weight: bold;
+}
+
+.card .foot .author a {
+    text-decoration: none;
+    color: var(--couleur);
+    position: relative;
+    top: -0.95em;
+    font-size: 1.25em;
+}
+
+.card .foot .social {
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+.card .foot .social a {
+    margin-left: 0.5em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.card .foot .social a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 1em;
+    }
+}

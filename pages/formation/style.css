@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Palette de couleurs */
+
+:root {
+    --dark: #888888;
+    --clair: #F0F0F0;
+    --couleur: #ecb7bc;
+}
+
+/* Gauche */
+
+.gauche {
+    width: 50%;
+    float: left;
+}
+
+.gauche img {
+    width: 70%;
+}
+
+/* Droite */
+
+.droite {
+    float: right;
+    width: 50%;
+}
+
+/* Compétences */
+
+#competences img {
+    padding: 2em;
+    width: 10%;
+}
+
+/* Projets */
+
+.blocks {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.block {
+    flex: 1 1 calc(50% - 1rem);
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1rem 0;
+    position: relative;
+}
+
+.block .block:nth-child(even) {
+    margin-right: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.block {
+    background: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.block img {
+    max-width: 100%;
+}
+
+.block h1 {
+    color: #444;
+    font: 1.6666em normal 'Open Sans', helvetica, arial;
+    margin-bottom: 1em;
+}
+
+.block p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 60em) {
+    .block {
+        flex: 1 1 calc(25% - 1rem);
+        overflow: hidden;
+    }
+
+    .block:nth-child(even) {
+        margin-right: 1rem;
+    }
+
+    .block:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0
+    }
+}
+
+@media screen and (max-width: 1200px){
+    
+    .gauche, .droite {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .droite {
+        float:left;
+    }
+
+    #anssi, #voltaire {
+        width: 50%;
+    }
+
+    #voltaire {
+        float:right;
+    }
+
+    #competences img {
+        padding: 0;
+        width: 15%;
+    }
+}

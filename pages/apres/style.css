@@ -1,0 +1,23 @@
+#option-une,
+#option-deux {
+    width: 48%;
+    text-align: justify;
+}
+
+#option-une h1,
+#option-deux h1 {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+}
+
+#option-une {
+    display: block;
+    float: left;
+}
+
+#option-deux {
+    display: block;
+    float: right;
+}

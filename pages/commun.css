@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Palette de couleurs */
+
+:root {
+    --dark: #888888;
+    --clair: #F0F0F0;
+    --couleur: #ecb7bc;
+}
+
+* {
+    font-family: 'Roboto' !important;
+}
+
+body {
+    background: var(--clair);
+    margin: 0;
+}
+
+*:link {
+    text-decoration: none;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.container {
+    float: left;
+    padding: 1em 4em;
+}
+
+.centre {
+    text-align: center;
+    align-content: center;
+}
+
+#navbar {
+    font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+.et-hero-tabs-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    min-width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 10;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: white;
+    color: black;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+}
+
+.et-hero-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: var(--clair);
+    text-align: center;
+}
+
+.et-hero-tab:hover {
+    color: black;
+    background: var(--couleur);
+    transition: all 0.5s ease;
+}
+
+/* Sticky */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Menu pages */
+
+header {
+    display: flex;
+    padding: 1em;
+    letter-spacing: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto';
+    color: black
+}
+
+footer img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1em;
+    width: 10vh;
+    border-radius: 50%;
+    opacity: 50%;
+}
